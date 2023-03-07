@@ -58,10 +58,10 @@ function start() {
 banner
 checkroot
 dependencies
-read -p $'\e[1;92mUsername account: \e[0m' user
-checkaccount=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "the page may have been removed")
+read -p $'\e[1;92mUsername account: surgery_instruments
+checkaccount=$(curl -s https://www.instagram.com/surgery_instruments | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
-printf "\e[1;91mInvalid Username! Try again\e[0m\n"
+printf "\e[1;91mInvalid Username! surgery_insruments
 sleep 1
 start
 else
